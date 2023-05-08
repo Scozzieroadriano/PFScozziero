@@ -1,0 +1,29 @@
+.dropdown {
+    grid-area: drop;
+    justify-self: end;
+    .btn {
+        background-color: rgba(255, 255, 255, 0.3);
+        
+        img {
+            width: 30px;
+            height: 30px;            
+        }
+    }
+
+    &-no-caret::after {
+        display: none; //Utilizo esta propiedad debido a que no necesito mostrar en ningun momento la imagen del triangulo y tampoco necesito que ocupe lugar
+    }
+
+    &-menu {
+        background-color: #0b0c0c71;
+        justify-self: end;
+
+        li a {
+            color: white;
+            font-size: 0.8rem;
+            font-weight: bold;
+            line-height: 2;
+            border: 1px solid white;
+        }
+    }
+}

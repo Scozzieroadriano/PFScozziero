@@ -1,0 +1,17 @@
+.header{
+    @include contenedorGrid($background:$primaryColor);
+    box-shadow: 0 5px 10px red;
+    grid-template-columns: 80px 1fr repeat(2,40px);
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas: 
+    "logo social social social"
+    "logo nav drop drop";
+
+
+    &LogoEmpresa{
+        grid-area: logo;
+        width: 60px;
+        height: auto;
+    }
+    
+}

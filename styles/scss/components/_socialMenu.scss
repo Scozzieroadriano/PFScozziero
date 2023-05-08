@@ -1,0 +1,16 @@
+.headerSocialMenu{    
+    grid-area: social;    
+    list-style: none;
+    @include contenedorFlex($content:end,$direction:row);
+    gap: 20px;
+
+    &Item{
+        width: 35px;       
+        
+        .socialIcon{
+            background-color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+    }
+}

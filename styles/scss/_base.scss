@@ -1,0 +1,31 @@
+//Reseteo de atributos
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li,ul,a{
+    padding: 0;
+    margin: 0;
+}
+//Declaracion de variables
+$primaryColor: black;
+//Declaracion de mixins
+@mixin contenedorGrid ($width:100%,$background:none){
+    width: 100%;
+    padding: .5em;
+    gap: 10px;
+    display: grid;
+    background-color:$background;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+@mixin contenedorFlex ($content:center,$items:center,$direction:column){
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: $content;
+    justify-items: $items;
+    flex-direction: $direction;
+}
