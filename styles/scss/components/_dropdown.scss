@@ -1,12 +1,15 @@
 .dropdown {
     grid-area: drop;
-    justify-self: end;
+    justify-self: start;
+
     .btn {
-        background-color: rgba(255, 255, 255, 0.3);
-        
+        padding: 0;
+        background-color: $primaryColor;
+
+
         img {
             width: 30px;
-            height: 30px;            
+            height: 30px;     
         }
     }
 
@@ -15,15 +18,14 @@
     }
 
     &-menu {
-        background-color: #0b0c0c71;
         justify-self: end;
+        background-color: rgba(0, 0, 0, 0.212);
 
         li a {
-            color: white;
+            color: rgb(224, 21, 21);
             font-size: 0.8rem;
             font-weight: bold;
             line-height: 2;
-            border: 1px solid white;
         }
     }
 }

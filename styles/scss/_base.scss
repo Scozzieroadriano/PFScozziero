@@ -9,11 +9,11 @@ li,ul,a{
     margin: 0;
 }
 //Declaracion de variables
-$primaryColor: black;
+$primaryColor: rgb(5, 74, 153);
 //Declaracion de mixins
 @mixin contenedorGrid ($width:100%,$background:none){
     width: 100%;
-    padding: .5em;
+    padding: 1em;
     gap: 10px;
     display: grid;
     background-color:$background;
@@ -28,4 +28,9 @@ $primaryColor: black;
     justify-content: $content;
     justify-items: $items;
     flex-direction: $direction;
+}
+@mixin tablet-resolution {
+    @media screen and (min-width: 575px){
+        @content;
+    }
 }

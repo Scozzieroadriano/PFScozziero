@@ -11,10 +11,11 @@ li, ul, a {
 
 .dropdown {
   grid-area: drop;
-  justify-self: end;
+  justify-self: start;
 }
 .dropdown .btn {
-  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0;
+  background-color: rgb(5, 74, 153);
 }
 .dropdown .btn img {
   width: 30px;
@@ -24,80 +25,67 @@ li, ul, a {
   display: none;
 }
 .dropdown-menu {
-  background-color: rgba(11, 12, 12, 0.4431372549);
   justify-self: end;
+  background-color: rgba(0, 0, 0, 0.212);
 }
 .dropdown-menu li a {
-  color: white;
+  color: rgb(224, 21, 21);
   font-size: 0.8rem;
   font-weight: bold;
   line-height: 2;
-  border: 1px solid white;
 }
 
 .headerSocialMenu {
   grid-area: social;
   list-style: none;
+  justify-self: end;
   width: 100%;
   display: flex;
   gap: 10px;
-  justify-content: end;
+  justify-content: space-between;
   justify-items: center;
   flex-direction: row;
-  gap: 20px;
-}
-.headerSocialMenuItem {
-  width: 35px;
+  width: 180px;
 }
 .headerSocialMenuItem .socialIcon {
   background-color: white;
-  border: 2px solid white;
-  border-radius: 10px;
+  width: 30px;
 }
 
-.dropdown {
-  grid-area: drop;
-  justify-self: end;
+.headerMenuPrincipal {
+  visibility: hidden;
+  grid-area: nav;
 }
-.dropdown .btn {
-  background-color: rgba(255, 255, 255, 0.3);
+.headerMenuPrincipalList {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: row;
 }
-.dropdown .btn img {
-  width: 30px;
-  height: 30px;
-}
-.dropdown-no-caret::after {
-  display: none;
-}
-.dropdown-menu {
-  background-color: rgba(11, 12, 12, 0.4431372549);
-  justify-self: end;
-}
-.dropdown-menu li a {
-  color: white;
-  font-size: 0.8rem;
-  font-weight: bold;
-  line-height: 2;
-  border: 1px solid white;
+.headerMenuPrincipalList a {
+  font-size: 0.5rem;
 }
 
 .header {
   width: 100%;
-  padding: 0.5em;
+  padding: 1em;
   gap: 10px;
   display: grid;
-  background-color: black;
+  background-color: rgb(5, 74, 153);
   justify-content: center;
   justify-items: center;
   align-items: center;
   box-shadow: 0 5px 10px red;
-  grid-template-columns: 80px 1fr repeat(2, 40px);
+  grid-template-columns: 90px 1fr repeat(2, 40px);
   grid-template-rows: repeat(2, auto);
-  grid-template-areas: "logo social social social" "logo nav drop drop";
+  grid-template-areas: "logo social social social" "logo nav nav drop";
 }
 .headerLogoEmpresa {
   grid-area: logo;
-  width: 60px;
+  width: 90px;
   height: auto;
 }
 

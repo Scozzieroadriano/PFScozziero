@@ -1,0 +1,15 @@
+.headerMenuPrincipal{
+    visibility: hidden;
+    grid-area: nav;
+    
+    &List{      
+       
+        list-style: none;
+        @include contenedorFlex($content:center,$direction:row);   
+        
+        a{
+           font-size: .5rem;
+        }
+        
+    }
+}
