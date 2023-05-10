@@ -8,8 +8,8 @@
 
 
         img {
-            width: 30px;
-            height: 30px;     
+            width: 40px;
+            height: 40px;     
         }
     }
 
@@ -27,5 +27,8 @@
             font-weight: bold;
             line-height: 2;
         }
+    }
+    @include tablet-resolution(){
+     visibility: hidden;   
     }
 }

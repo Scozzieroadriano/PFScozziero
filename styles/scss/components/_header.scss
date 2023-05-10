@@ -13,5 +13,12 @@
         width: 90px;
         height: auto;
     }
+    @include tablet-resolution(){
+        grid-template-columns: 90px 20px 1fr repeat(2,40px);
+        grid-template-areas: 
+        "logo drop social social social"
+        "logo nav nav nav nav";
+
+    }
     
 }

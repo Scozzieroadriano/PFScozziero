@@ -18,8 +18,8 @@ li, ul, a {
   background-color: rgb(5, 74, 153);
 }
 .dropdown .btn img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 .dropdown-no-caret::after {
   display: none;
@@ -34,6 +34,11 @@ li, ul, a {
   font-weight: bold;
   line-height: 2;
 }
+@media screen and (min-width: 767px) {
+  .dropdown {
+    visibility: hidden;
+  }
+}
 
 .headerSocialMenu {
   grid-area: social;
@@ -45,16 +50,18 @@ li, ul, a {
   justify-content: space-between;
   justify-items: center;
   flex-direction: row;
-  width: 180px;
+  width: 200px;
 }
 .headerSocialMenuItem .socialIcon {
   background-color: white;
-  width: 30px;
+  width: 25px;
 }
 
 .headerMenuPrincipal {
   visibility: hidden;
   grid-area: nav;
+  width: 100%;
+  background-color: red;
 }
 .headerMenuPrincipalList {
   list-style: none;
@@ -67,6 +74,24 @@ li, ul, a {
 }
 .headerMenuPrincipalList a {
   font-size: 0.5rem;
+  text-decoration: none;
+}
+@media screen and (min-width: 767px) {
+  .headerMenuPrincipal {
+    visibility: visible;
+  }
+  .headerMenuPrincipalList li {
+    height: 60px;
+  }
+  .headerMenuPrincipalList li a {
+    align-self: center;
+    color: white;
+    font-size: 0.8rem;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+  }
 }
 
 .header {
@@ -87,6 +112,12 @@ li, ul, a {
   grid-area: logo;
   width: 90px;
   height: auto;
+}
+@media screen and (min-width: 767px) {
+  .header {
+    grid-template-columns: 90px 20px 1fr repeat(2, 40px);
+    grid-template-areas: "logo drop social social social" "logo nav nav nav nav";
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -3,11 +3,11 @@
     list-style: none;
     justify-self: end;
     @include contenedorFlex($content:space-between,$direction:row);
-    width: max(180px);
+    width: max(200px);
     &Item{         
         .socialIcon{
             background-color: white;
-            width: 30px;
+            width: 25px;
         }
     }
 

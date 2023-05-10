@@ -1,7 +1,8 @@
 .headerMenuPrincipal{
     visibility: hidden;
     grid-area: nav;
-    
+    width: 100%;
+    background-color: red;
     &List{      
        
         list-style: none;
@@ -9,7 +10,27 @@
         
         a{
            font-size: .5rem;
+           text-decoration: none;
         }
         
+    }
+    @include tablet-resolution(){
+        visibility: visible;        
+        &List{
+
+            li{ 
+                height: 60px;
+                  
+                a{  
+                    align-self: center;
+                    color: white;
+                    font-size: .8rem;
+                    display: inline-block;
+                    height: 60px; // ajustar la altura deseada 
+                    line-height: 60px; // establecer la misma altura que la etiqueta 
+                    text-align: center; // opcional para alinear horizontalmente 
+                }
+            }
+        }   
     }
 }

@@ -30,7 +30,7 @@ $primaryColor: rgb(5, 74, 153);
     flex-direction: $direction;
 }
 @mixin tablet-resolution {
-    @media screen and (min-width: 575px){
+    @media screen and (min-width: 767px){
         @content;
     }
 }
