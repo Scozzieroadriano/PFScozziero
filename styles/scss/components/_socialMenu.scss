@@ -4,11 +4,21 @@
     justify-self: end;
     @include contenedorFlex($content:space-between,$direction:row);
     width: max(200px);
-    &Item{         
+    &Item{
+        display: inline-block;         
         .socialIcon{
             background-color: white;
             width: 25px;
         }
     }
+@include tablet-resolution{
+    width: max(300px);
+
+    &Item{
+        .socialIcon{
+        width: 35px;
+        }
+    }
+}
 
 }

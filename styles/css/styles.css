@@ -34,7 +34,7 @@ li, ul, a {
   font-weight: bold;
   line-height: 2;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .dropdown {
     visibility: hidden;
   }
@@ -52,16 +52,69 @@ li, ul, a {
   flex-direction: row;
   width: 200px;
 }
+.headerSocialMenuItem {
+  display: inline-block;
+}
 .headerSocialMenuItem .socialIcon {
   background-color: white;
   width: 25px;
+}
+@media screen and (min-width: 400px) {
+  .headerSocialMenu {
+    width: 300px;
+  }
+  .headerSocialMenuItem .socialIcon {
+    width: 35px;
+  }
+}
+
+.d-flex {
+  grid-area: nav;
+  visibility: hidden;
+}
+.d-flex .form-control {
+  font-size: 0.7rem;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+}
+.d-flex .btn {
+  font-size: 0.7rem;
+  color: white;
+  font-weight: bold;
+}
+@media screen and (min-width: 400px) {
+  .d-flex {
+    visibility: visible;
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 525px) {
+  .d-flex {
+    justify-self: end;
+  }
+}
+@media screen and (min-width: 768px) {
+  .d-flex {
+    grid-area: search;
+    max-width: 200px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .d-flex {
+    max-width: 300px;
+  }
 }
 
 .headerMenuPrincipal {
   visibility: hidden;
   grid-area: nav;
   width: 100%;
-  background-color: red;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: row;
 }
 .headerMenuPrincipalList {
   list-style: none;
@@ -73,17 +126,20 @@ li, ul, a {
   flex-direction: row;
 }
 .headerMenuPrincipalList a {
-  font-size: 0.5rem;
+  font-size: 0.2rem;
   text-decoration: none;
+  font-weight: bold;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .headerMenuPrincipal {
     visibility: visible;
   }
   .headerMenuPrincipalList li {
     height: 60px;
+    width: 75px;
   }
   .headerMenuPrincipalList li a {
+    width: 100%;
     align-self: center;
     color: white;
     font-size: 0.8rem;
@@ -91,6 +147,26 @@ li, ul, a {
     height: 60px;
     line-height: 60px;
     text-align: center;
+  }
+}
+@media screen and (min-width: 900px) {
+  .headerMenuPrincipal {
+    max-width: 600px;
+  }
+  .headerMenuPrincipalList {
+    justify-content: space-between;
+    max-width: 600px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .headerMenuPrincipalList {
+    justify-content: space-around;
+  }
+  .headerMenuPrincipalList li {
+    width: 100px;
+  }
+  .headerMenuPrincipalList li a {
+    font-size: 1rem;
   }
 }
 
@@ -113,10 +189,36 @@ li, ul, a {
   width: 90px;
   height: auto;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 400px) {
   .header {
-    grid-template-columns: 90px 20px 1fr repeat(2, 40px);
-    grid-template-areas: "logo drop social social social" "logo nav nav nav nav";
+    grid-template-columns: 80px 1fr repeat(2, 40px);
+  }
+  .headerLogoEmpresa {
+    width: 90px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .header {
+    grid-template-columns: repeat(2, 1fr) repeat(2, 40px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    grid-template-columns: 100px 20px 1fr 200px;
+    grid-template-areas: "logo drop social  social" "logo nav nav  search";
+  }
+}
+@media screen and (min-width: 900px) {
+  .header {
+    grid-template-columns: 100px 20px 1fr 300px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    grid-template-columns: 150px 20px 1fr 300px;
+  }
+  .headerLogoEmpresa {
+    justify-self: end;
   }
 }
 

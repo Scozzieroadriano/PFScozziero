@@ -1,0 +1,28 @@
+.d-flex{
+grid-area: nav;
+visibility: hidden;
+.form-control{
+    font-size: .7rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+}
+.btn{
+    font-size: .7rem;
+    color: white;
+    font-weight: bold;
+}
+@include tablet-resolution{
+    visibility: visible;
+    max-width: 350px;
+}
+@include tablet-resolution-intermedio{
+    justify-self: end;
+}
+@include desk-resolution{
+    grid-area: search;
+    max-width: 200px;
+}
+@include desk-resolution-intermedio{
+    max-width: 300px;
+}
+}

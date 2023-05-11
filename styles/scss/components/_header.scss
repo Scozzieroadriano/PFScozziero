@@ -14,10 +14,31 @@
         height: auto;
     }
     @include tablet-resolution(){
-        grid-template-columns: 90px 20px 1fr repeat(2,40px);
+        grid-template-columns: 80px 1fr repeat(2,40px);
+        &LogoEmpresa{
+            width: 90px;
+        }
+
+    }
+    @include tablet-resolution(){
+        grid-template-columns: repeat(2,1fr) repeat(2,40px);
+ 
+    }
+    @include desk-resolution(){
+        grid-template-columns: 100px 20px 1fr 200px;
         grid-template-areas: 
-        "logo drop social social social"
-        "logo nav nav nav nav";
+        "logo drop social  social"
+        "logo nav nav  search";
+    }
+    @include desk-resolution-intermedio{
+        grid-template-columns: 100px 20px 1fr 300px;
+
+    }
+    @include desk-resolution-max {
+        grid-template-columns: 150px 20px 1fr 300px;
+        &LogoEmpresa{
+           justify-self: end;
+        }
 
     }
     

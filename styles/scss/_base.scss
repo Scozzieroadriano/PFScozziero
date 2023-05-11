@@ -29,8 +29,29 @@ $primaryColor: rgb(5, 74, 153);
     justify-items: $items;
     flex-direction: $direction;
 }
-@mixin tablet-resolution {
-    @media screen and (min-width: 767px){
+@mixin desk-resolution {
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+@mixin tablet-resolution{
+    @media screen and (min-width: 400px){
+        @content;
+    }
+}
+@mixin tablet-resolution-intermedio{
+    @media screen and (min-width: 525px){
+        @content;
+    }
+
+}
+@mixin desk-resolution-intermedio{
+    @media screen and (min-width: 900px){
+        @content;
+    }
+}
+@mixin desk-resolution-max{
+    @media screen and (min-width: 1024px){
         @content;
     }
 }
