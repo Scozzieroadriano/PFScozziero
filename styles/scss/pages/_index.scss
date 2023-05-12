@@ -1,14 +1,15 @@
 .seccionPrincipal{
     @include contenedorGrid();
     padding: 0;
-    grid-template-rows:  30px repeat(4,auto);
+    grid-template-rows:  30px repeat(5,auto);
     align-items: start;
     grid-template-areas:
     "titulo"
     "portada"
     "empresa"
     "certificacion"
-    "calidad" ;
+    "calidad"
+    "contacto" ;
 
     &Title{
         grid-area: titulo;
@@ -73,6 +74,31 @@
             line-height: 1.5;
         }
 
+    }
+    &Contacto{
+        grid-area: contacto;
+        height: 250px;
+        background-image: url(../../../images/fondos/banner-contacto.png);
+        background-size: cover;
+        background-position: center;
+        @include contenedorFlex($content:end);
+        padding: 10px;
+        color: white;
+        margin-bottom: 20px;
+
+        &Title{
+            font-size:1.5rem;
+        }
+        &Desc{
+            font-weight: bold;
+        }
+        .btnEmpresa{
+            background-color: transparent;
+            border-color: $secondaryColor;
+            color: black;
+            font-weight: bold;
+            margin-top: 20px;
+        }
     }
 
 }

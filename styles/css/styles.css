@@ -74,7 +74,7 @@ li, ul, ol, a, p, h1, h2, h3, h4, span {
 }
 @media screen and (min-width: 400px) {
   .headerSocialMenu {
-    width: 300px;
+    width: 250px;
   }
   .headerSocialMenuItem .socialIcon {
     width: 35px;
@@ -98,7 +98,7 @@ li, ul, ol, a, p, h1, h2, h3, h4, span {
 @media screen and (min-width: 400px) {
   .d-flex {
     visibility: visible;
-    max-width: 350px;
+    max-width: 200px;
   }
 }
 @media screen and (min-width: 525px) {
@@ -109,7 +109,7 @@ li, ul, ol, a, p, h1, h2, h3, h4, span {
 @media screen and (min-width: 768px) {
   .d-flex {
     grid-area: search;
-    max-width: 200px;
+    max-width: 180px;
   }
 }
 @media screen and (min-width: 900px) {
@@ -149,7 +149,7 @@ li, ul, ol, a, p, h1, h2, h3, h4, span {
   }
   .headerMenuPrincipalList li {
     height: 60px;
-    width: 75px;
+    width: 90px;
   }
   .headerMenuPrincipalList li a {
     width: 100%;
@@ -279,9 +279,9 @@ main {
   justify-items: center;
   align-items: center;
   padding: 0;
-  grid-template-rows: 30px repeat(4, auto);
+  grid-template-rows: 30px repeat(5, auto);
   align-items: start;
-  grid-template-areas: "titulo" "portada" "empresa" "certificacion" "calidad";
+  grid-template-areas: "titulo" "portada" "empresa" "certificacion" "calidad" "contacto";
 }
 .seccionPrincipalTitle {
   grid-area: titulo;
@@ -360,6 +360,69 @@ main {
   font-size: 1.5rem;
   color: rgb(194, 17, 17);
   line-height: 1.5;
+}
+.seccionPrincipalContacto {
+  grid-area: contacto;
+  height: 250px;
+  background-image: url(../../../images/fondos/banner-contacto.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  justify-items: center;
+  flex-direction: column;
+  padding: 10px;
+  color: white;
+  margin-bottom: 20px;
+}
+.seccionPrincipalContactoTitle {
+  font-size: 1.5rem;
+}
+.seccionPrincipalContactoDesc {
+  font-weight: bold;
+}
+.seccionPrincipalContacto .btnEmpresa {
+  background-color: transparent;
+  border-color: rgb(194, 17, 17);
+  color: black;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.seccionNosotros {
+  width: 100%;
+  padding: 1em;
+  gap: 10px;
+  display: grid;
+  background-color: none;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 30px repeat(4, auto);
+  padding: 0;
+  grid-template-areas: "titulo" "historia" "sucesos" "vision" "desposte";
+}
+.seccionNosotrosTitle {
+  grid-area: titulo;
+}
+.seccionNosotrosHistoria {
+  grid-area: historia;
+  background-image: url(../../../images/fondoGrisTexturado.jpg);
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+.seccionNosotrosHistoriaDesc {
+  display: block;
+  text-align: center;
+  font-family: serif;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -12,7 +12,7 @@
         }
     }
 @include tablet-resolution{
-    width: max(300px);
+    width: max(250px);
 
     &Item{
         .socialIcon{

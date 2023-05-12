@@ -13,14 +13,14 @@ visibility: hidden;
 }
 @include tablet-resolution{
     visibility: visible;
-    max-width: 350px;
+    max-width: 200px;
 }
 @include tablet-resolution-intermedio{
     justify-self: end;
 }
 @include desk-resolution{
     grid-area: search;
-    max-width: 200px;
+    max-width: 180px;
 }
 @include desk-resolution-intermedio{
     max-width: 300px;
