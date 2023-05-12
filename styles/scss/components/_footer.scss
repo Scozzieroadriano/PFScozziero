@@ -1,0 +1,19 @@
+.footer{
+    background-color: $primaryColor;
+    @include contenedorFlex ($content:center);
+    padding: 10px;
+    gap: 15px;
+    font-size: .7rem;
+    text-align: center;
+    z-index: 999;
+    bottom: 0;
+    @include contraste($primaryColor);
+
+
+    a{display: inline;
+        font-style: italic;
+        text-decoration: underline;
+        @include contraste($primaryColor);
+
+    }
+}

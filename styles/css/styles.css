@@ -4,9 +4,22 @@
   box-sizing: border-box;
 }
 
-li, ul, a {
+li, ul, ol, a, p, h1, h2, h3, h4, span {
   padding: 0;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+}
+
+.btnEmpresa {
+  background-color: rgb(194, 17, 17);
+  text-decoration: none;
+  padding: 10px;
+  width: max-content;
+  border: 2px solid black;
+  border-radius: 10px 0 10px 10px;
+  align-self: center;
+  color: white;
 }
 
 .dropdown {
@@ -170,6 +183,11 @@ li, ul, a {
   }
 }
 
+main {
+  margin-top: 125px;
+  width: 100%;
+}
+
 .header {
   width: 100%;
   padding: 1em;
@@ -179,6 +197,10 @@ li, ul, a {
   justify-content: center;
   justify-items: center;
   align-items: center;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
   box-shadow: 0 5px 10px red;
   grid-template-columns: 90px 1fr repeat(2, 40px);
   grid-template-rows: repeat(2, auto);
@@ -205,7 +227,7 @@ li, ul, a {
 @media screen and (min-width: 768px) {
   .header {
     grid-template-columns: 100px 20px 1fr 200px;
-    grid-template-areas: "logo drop social  social" "logo nav nav  search";
+    grid-template-areas: "logo drop social social" "logo nav nav search";
   }
 }
 @media screen and (min-width: 900px) {
@@ -220,6 +242,124 @@ li, ul, a {
   .headerLogoEmpresa {
     justify-self: end;
   }
+}
+
+.footer {
+  background-color: rgb(5, 74, 153);
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  padding: 10px;
+  gap: 15px;
+  font-size: 0.7rem;
+  text-align: center;
+  z-index: 999;
+  bottom: 0;
+  background-color: rgb(5, 74, 153);
+  color: white;
+}
+.footer a {
+  display: inline;
+  font-style: italic;
+  text-decoration: underline;
+  background-color: rgb(5, 74, 153);
+  color: white;
+}
+
+.seccionPrincipal {
+  width: 100%;
+  padding: 1em;
+  gap: 10px;
+  display: grid;
+  background-color: none;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 0;
+  grid-template-rows: 30px repeat(4, auto);
+  align-items: start;
+  grid-template-areas: "titulo" "portada" "empresa" "certificacion" "calidad";
+}
+.seccionPrincipalTitle {
+  grid-area: titulo;
+  visibility: hidden;
+}
+.seccionPrincipalPortada {
+  color: white;
+  height: 300px;
+  background-image: url(../../../images/larrauri/JON_7322.JPG);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.seccionPrincipalPortadaTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.seccionPrincipalPortada span {
+  font-size: 0.8rem;
+}
+.seccionPrincipalEmpresa {
+  grid-area: empresa;
+  background-image: url(../../../images/fondoGrisTexturado.jpg);
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.seccionPrincipalEmpresa p {
+  font-family: serif;
+  text-align: justify;
+  line-height: 1.5;
+}
+.seccionPrincipalCertificaciones {
+  padding-top: 2em;
+  grid-area: certificacion;
+  width: 100%;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+.seccionPrincipalCertificacionesTitle {
+  text-align: center;
+  line-height: 1.5;
+}
+.seccionPrincipalCertificaciones img {
+  width: 80%;
+}
+.seccionPrincipalCalidad {
+  grid-area: calidad;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  background-image: url(../../../images/fondoGrisTexturado.jpg);
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+}
+.seccionPrincipalCalidadTitle {
+  font-size: 1.5rem;
+  color: rgb(194, 17, 17);
+  line-height: 1.5;
 }
 
 /*# sourceMappingURL=styles.css.map */

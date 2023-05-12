@@ -1,8 +1,10 @@
 @import "./base";
+@import "./components/buttons";
 @import "./components/dropdown";
 @import "./components/socialMenu";
 @import "./components/search";
 @import "./components/menuPrincipal";
-
-
-@import "./components/header.scss"
+@import "./components/main";
+@import "./components/header";
+@import "./components/footer";
+@import "./pages/index";

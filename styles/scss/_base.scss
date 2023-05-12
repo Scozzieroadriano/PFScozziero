@@ -4,15 +4,27 @@
     margin: 0;
     box-sizing: border-box;
 }
-li,ul,a{
+li,ul,ol,a,p,h1,h2,h3,h4,span{
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
 }
+
+
 //Declaracion de variables
 $primaryColor: rgb(5, 74, 153);
+$secondaryColor: rgb(194, 17, 17);
 //Declaracion de mixins
+@mixin contraste($background){
+    background-color: $background;
+    @if lightness($background)>50{
+        color: black;
+    } @else {color: white;}
+
+}
 @mixin contenedorGrid ($width:100%,$background:none){
-    width: 100%;
+    width: $width;
     padding: 1em;
     gap: 10px;
     display: grid;

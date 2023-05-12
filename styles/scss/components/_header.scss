@@ -1,5 +1,9 @@
 .header{
     @include contenedorGrid($background:$primaryColor);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
     box-shadow: 0 5px 10px red;
     grid-template-columns: 90px 1fr repeat(2,40px);
     grid-template-rows: repeat(2,auto);
@@ -27,8 +31,8 @@
     @include desk-resolution(){
         grid-template-columns: 100px 20px 1fr 200px;
         grid-template-areas: 
-        "logo drop social  social"
-        "logo nav nav  search";
+        "logo drop social social"
+        "logo nav nav search";
     }
     @include desk-resolution-intermedio{
         grid-template-columns: 100px 20px 1fr 300px;
