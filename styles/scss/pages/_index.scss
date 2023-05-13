@@ -19,7 +19,7 @@
     &Portada{
         color: white;
         height: 300px;
-        background-image: url(../../../images/larrauri/JON_7322.JPG);
+        background-image: url(../../images/larrauri/JON_7322.JPG);
         background-position: center;
         background-size: cover;   
         @include contenedorFlex ($content:center);
@@ -36,7 +36,7 @@
     }
     &Empresa{
         grid-area: empresa;
-        background-image: url(../../../images/fondoGrisTexturado.jpg);
+        background-image: url(../../images/fondoGrisTexturado.jpg);
         @include contenedorFlex ($content:center);
         padding: 10px;
 
@@ -57,13 +57,13 @@
             line-height: 1.5;
         }
         img{
-            width: 80%;
+            width: 70%;
         }
     }
     &Calidad{
         grid-area: calidad;
         @include contenedorFlex ($content:center);
-        background-image: url(../../../images/fondoGrisTexturado.jpg);
+        background-image: url(../../images/fondoGrisTexturado.jpg);
         padding: 10px;
         align-items: center;
         text-align: center;
@@ -78,7 +78,7 @@
     &Contacto{
         grid-area: contacto;
         height: 250px;
-        background-image: url(../../../images/fondos/banner-contacto.png);
+        background-image: url(../../images/fondos/banner-contacto.png);
         background-size: cover;
         background-position: center;
         @include contenedorFlex($content:end);

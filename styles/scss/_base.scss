@@ -21,7 +21,12 @@ $secondaryColor: rgb(194, 17, 17);
     @if lightness($background)>50{
         color: black;
     } @else {color: white;}
-
+}
+@mixin parrafo(){
+    display: block;
+    text-align: justify;
+    font-family: serif;
+    line-height: 1.3;
 }
 @mixin contenedorGrid ($width:100%,$background:none){
     width: $width;

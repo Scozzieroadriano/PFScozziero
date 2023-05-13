@@ -22,6 +22,35 @@ li, ul, ol, a, p, h1, h2, h3, h4, span {
   color: white;
 }
 
+.etiquetaBtn {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  gap: 5px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+.etiquetaBtn .btn-circle {
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid rgb(5, 74, 153);
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  line-height: 0;
+  padding: 0;
+}
+.etiquetaBtn .btn-circle:focus {
+  outline: none;
+}
+.etiquetaBtn .btn-circle:active {
+  box-shadow: inset 0 0 10px rgb(194, 17, 17);
+}
+
 .dropdown {
   grid-area: drop;
   justify-self: start;
@@ -269,6 +298,47 @@ main {
   color: white;
 }
 
+.seccionNosotrosLineaTiempo {
+  grid-area: sucesos;
+}
+.seccionNosotrosLineaTiempoContainerBtns {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: row;
+  padding: 20px;
+}
+.seccionNosotrosLineaTiempoContainerBtns span {
+  font-weight: bold;
+}
+
+.containerDescription {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid rgb(5, 74, 153);
+  gap: 0;
+}
+.containerDescriptionTitle, .containerDescriptionDesc {
+  width: 100%;
+  padding: 0.2em;
+  text-align: center;
+}
+.containerDescriptionDesc {
+  border-top: 1px solid rgb(5, 74, 153);
+  padding: 20px;
+  text-align: justify;
+  font-family: serif;
+  font-style: italic;
+}
+
 .seccionPrincipal {
   width: 100%;
   padding: 1em;
@@ -290,7 +360,7 @@ main {
 .seccionPrincipalPortada {
   color: white;
   height: 300px;
-  background-image: url(../../../images/larrauri/JON_7322.JPG);
+  background-image: url(../../images/larrauri/JON_7322.JPG);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -310,7 +380,7 @@ main {
 }
 .seccionPrincipalEmpresa {
   grid-area: empresa;
-  background-image: url(../../../images/fondoGrisTexturado.jpg);
+  background-image: url(../../images/fondoGrisTexturado.jpg);
   width: 100%;
   display: flex;
   gap: 10px;
@@ -341,7 +411,7 @@ main {
   line-height: 1.5;
 }
 .seccionPrincipalCertificaciones img {
-  width: 80%;
+  width: 70%;
 }
 .seccionPrincipalCalidad {
   grid-area: calidad;
@@ -351,7 +421,7 @@ main {
   justify-content: center;
   justify-items: center;
   flex-direction: column;
-  background-image: url(../../../images/fondoGrisTexturado.jpg);
+  background-image: url(../../images/fondoGrisTexturado.jpg);
   padding: 10px;
   align-items: center;
   text-align: center;
@@ -364,7 +434,7 @@ main {
 .seccionPrincipalContacto {
   grid-area: contacto;
   height: 250px;
-  background-image: url(../../../images/fondos/banner-contacto.png);
+  background-image: url(../../images/fondos/banner-contacto.png);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -409,7 +479,7 @@ main {
 }
 .seccionNosotrosHistoria {
   grid-area: historia;
-  background-image: url(../../../images/fondoGrisTexturado.jpg);
+  background-image: url(../../images/fondoGrisTexturado.jpg);
   width: 100%;
   display: flex;
   gap: 10px;
@@ -419,10 +489,60 @@ main {
   padding: 10px;
   align-items: center;
 }
+.seccionNosotrosHistoriaTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 .seccionNosotrosHistoriaDesc {
   display: block;
-  text-align: center;
+  text-align: justify;
   font-family: serif;
+  line-height: 1.3;
+}
+.seccionNosotrosVision {
+  grid-area: vision;
+  background-image: url(../../images/fondoGrisTexturado.jpg);
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.seccionNosotrosVisionTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.seccionNosotrosVision p {
+  display: block;
+  text-align: justify;
+  font-family: serif;
+  line-height: 1.3;
+}
+.seccionNosotrosCicloDos {
+  background-color: red;
+  background-color: red;
+  color: white;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.seccionNosotrosCicloDosTitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.seccionNosotrosCicloDos p {
+  display: block;
+  text-align: justify;
+  font-family: serif;
+  line-height: 1.3;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

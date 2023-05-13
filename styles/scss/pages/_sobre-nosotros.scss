@@ -13,16 +13,52 @@
     }
     &Historia{
         grid-area: historia;
-        background-image: url(../../../images/fondoGrisTexturado.jpg);
+        background-image: url(../../images/fondoGrisTexturado.jpg);
         @include contenedorFlex($content:center);
         padding: 10px;
         align-items: center;
+
+        &Title{            
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
         
         &Desc{
-            display: block;
-            text-align: center;
-            font-family: serif;
+            @include parrafo();
         }
     }
-    
+
+    &Vision{
+        grid-area: vision;
+        background-image: url(../../images/fondoGrisTexturado.jpg);
+        @include contenedorFlex ();
+        padding: 10px;
+
+            &Title{
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            p{
+                @include parrafo();
+            }
+        }  
+    &CicloDos{
+        background-color: red;        
+        @include contraste(red);
+        @include contenedorFlex ();
+        padding: 10px;
+
+        &Title{
+            text-align: center;
+            font-weight: bold;    
+            font-size: 1.5rem;
+            
+        }
+        p{ 
+         @include parrafo();
+         font-size: 1.2rem;
+        }
+        
+    }
+
 }
