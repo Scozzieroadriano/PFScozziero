@@ -63,6 +63,11 @@ $secondaryColor: rgb(194, 17, 17);
     }
 
 }
+@mixin resolutionSecondary {
+    @media screen and (min-width: 700px){
+        @content;
+    }
+}
 @mixin desk-resolution {
     @media screen and (min-width: 768px){
         @content;

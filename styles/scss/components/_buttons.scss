@@ -7,6 +7,12 @@
     border-radius: 10px;
     align-self: center;
     color: white;
+    transition: transform 0.3seg ease-in-out;
+
+    &:hover{
+      transform: scale(1.2);
+      background-color: $primaryColor;
+    }
 }
 .etiquetaBtn{
     @include contenedorFlex();

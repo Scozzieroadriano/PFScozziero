@@ -12,4 +12,28 @@
     &Title{
         grid-area: titulo;
     }
+
+    &Noticias{
+        @include contenedorGrid();
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,auto);
+        justify-content: center;
+
+        @include resolutionSecondary{
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        @include desk-resolution-intermedio{
+            grid-template-columns: repeat(3,1fr);
+        }
+        
+    }
+
+    @include tablet-resolution{
+        padding-top: 25px;
+    }
+    @include desk-resolution{
+        padding-top: 30px;
+    }
 }

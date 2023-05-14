@@ -1,28 +1,41 @@
-.headerMenuPrincipal{
+.headerMenuPrincipal {
     visibility: hidden;
     grid-area: nav;
     width: 100%;
-    @include contenedorFlex($content:center,$direction:row);
-    &List{      
-        list-style: none;
-        @include contenedorFlex($content:center,$direction:row);   
-        
-        a{
-           font-size: .2rem;
-           text-decoration: none;
-           font-weight: bold;
-        }
-        
-    }
-    @include desk-resolution(){
-        visibility: visible;        
-        &List{
+    @include contenedorFlex($content: center, $direction: row);
 
-            li{ 
+    &List {
+        list-style: none;
+        @include contenedorFlex($content: center, $direction: row);
+
+        a {
+            font-size: .2rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2seg ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    &{
+        @include desk-resolution{
+            gap: 15px;
+        }
+    }
+
+    }
+
+    @include desk-resolution() {
+        visibility: visible;
+        
+        &List {
+
+            li {
                 height: 60px;
-                width: 90px;
-                  
-                a{  
+                width: 80px;
+
+                a {
                     width: 100%;
                     align-self: center;
                     color: white;
@@ -33,22 +46,26 @@
                     text-align: center; // opcional para alinear horizontalmente 
                 }
             }
-        }   
+        }
     }
-    @include desk-resolution-intermedio(){
+
+    @include desk-resolution-intermedio() {
         max-width: 600px;
 
-       &List{
+        &List {
             justify-content: space-between;
             max-width: 600px;
-       }
+        }
     }
-    @include desk-resolution-max{
-        &List{
+
+    @include desk-resolution-max {
+        &List {
             justify-content: space-around;
-            li{
+
+            li {
                 width: 100px;
-                a{
+
+                a {
                     font-size: 1rem;
                 }
             }

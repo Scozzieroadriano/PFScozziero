@@ -1,6 +1,10 @@
 .etiquetaNoticias{
     @include contenedorGrid();
-
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,auto);
+    align-self: center;
+    align-items: center;
+    height: 800px;
     &Fig{
        
 
@@ -10,7 +14,7 @@
     }
     &Desc{
         @include contenedorGrid();
-        padding: 0;
+        padding: 10px;
         h2{
             color: $secondaryColor;
         }
@@ -21,5 +25,9 @@
     }
     .btnEmpresa{
         border: none;
+    }
+
+    @include tablet-resolution{
+        max-width: 360px;
     }
 }
