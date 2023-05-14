@@ -1,14 +1,16 @@
 @import "./base";
 @import "./components/buttons";
 @import "./components/dropdown";
-@import "./components/socialMenu";
+@import "./components/social-menu";
 @import "./components/search";
-@import "./components/menuPrincipal";
+@import "./components/menu-principal";
 @import "./components/main";
 @import "./components/header";
 @import "./components/footer";
-@import "./components/lineaTiempo";
+@import "./components/linea-tiempo";
+@import "./components/etiqueta-producto";
 
 
 @import "./pages/index";
 @import "./pages/sobre-nosotros";
+@import "./pages/productos";
