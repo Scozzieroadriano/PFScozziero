@@ -14,7 +14,7 @@
     &Portada {
         grid-area: portada;
         @include contenedorFlex();
-        background-image: url(../../../images/fondos/fondo-contacto.jpg);
+        background-image: url(../../images/fondos/fondo-contacto.jpg);
         background-size: cover;
         background-position: center;
         height: 200px;

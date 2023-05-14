@@ -364,7 +364,7 @@ main {
 }
 
 .seccionNosotrosLineaTiempo {
-  background-image: url(../../../images/fondoGrisTexturado.jpg);
+  background-image: url(../../images/fondoGrisTexturado.jpg);
   padding: 10px;
   grid-area: sucesos;
   width: 100%;
@@ -629,7 +629,7 @@ main {
 }
 
 .seccionContactoVentas {
-  background-image: url(../../../images/fondos/fondo-parrafo.jpg);
+  background-image: url(../../images/fondos/fondo-parrafo.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -973,7 +973,7 @@ main {
   grid-area: portada;
   width: 100%;
   height: 200px;
-  background-image: url(../../../images/fondos/portada-productos.png);
+  background-image: url(../../images/fondos/portada-productos.png);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -1020,7 +1020,7 @@ main {
 }
 .seccionProductoIntro {
   grid-area: descripcion;
-  background-image: url(../../../images/fondoGrisTexturado.jpg);
+  background-image: url(../../images/fondoGrisTexturado.jpg);
   width: 100%;
   display: flex;
   gap: 10px;
@@ -1060,7 +1060,7 @@ main {
   justify-content: center;
   justify-items: center;
   flex-direction: column;
-  background-image: url(../../../images/fondos/fondo-contacto.jpg);
+  background-image: url(../../images/fondos/fondo-contacto.jpg);
   background-size: cover;
   background-position: center;
   height: 200px;
