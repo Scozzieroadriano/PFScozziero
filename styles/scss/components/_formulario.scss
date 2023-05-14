@@ -11,16 +11,35 @@
 
     &Asunto {
         @include contenedorFlex();
+        width: max(80%);
+        
 
         &Genero{
             @include contenedorFlex();
             align-items: center;
+            
+
+            @include tablet-resolution{
+                flex-direction: row;
+            }
+            .Genero{
+                box-shadow: none;
+            }
         }
+    }
+    .buttons{
+        flex-direction: row;
     }
 
     input, textarea{
         box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
         border: 1px solid $primaryColor;
         border-radius: 5px;
+    }
+    
+
+    @include tablet-resolution-intermedio{
+        width: 475px;
+      
     }
 }

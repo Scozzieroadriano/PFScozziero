@@ -1,16 +1,17 @@
-.seccionContacto{
+.seccionContacto {
     @include contenedorGrid();
     padding: 0;
-    grid-template-rows: 200px repeat(2,auto) ;
+    grid-template-rows: 200px repeat(3, auto);
     grid-template-columns: 1fr;
     align-items: start;
-    grid-template-areas:    
-    "portada"
-    "formulario"
-    "mapa"
-     ;
+    grid-template-areas:
+        "portada"
+        "formulario"
+        "contacto"
+        "mapa"
+    ;
 
-    &Portada{
+    &Portada {
         grid-area: portada;
         @include contenedorFlex();
         background-image: url(../../../images/fondos/fondo-contacto.jpg);
@@ -19,12 +20,13 @@
         height: 200px;
         align-items: center;
         gap: 25px;
-        
-        &Title, &Subtitle{
+
+        &Title,
+        &Subtitle {
             font-weight: bold;
-            color:white;
+            color: white;
             text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
         }
-        
+
     }
 }

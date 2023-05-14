@@ -519,6 +519,7 @@ main {
   justify-content: center;
   justify-items: center;
   flex-direction: column;
+  width: 80%;
 }
 .seccionContactoFormAsuntoGenero {
   width: 100%;
@@ -529,13 +530,30 @@ main {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 400px) {
+  .seccionContactoFormAsuntoGenero {
+    flex-direction: row;
+  }
+}
+.seccionContactoFormAsuntoGenero .Genero {
+  box-shadow: none;
+}
+.seccionContactoForm .buttons {
+  flex-direction: row;
+}
 .seccionContactoForm input, .seccionContactoForm textarea {
   box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
   border: 1px solid rgb(5, 74, 153);
   border-radius: 5px;
 }
+@media screen and (min-width: 525px) {
+  .seccionContactoForm {
+    width: 475px;
+  }
+}
 
 .seccionContactoUbicacion {
+  width: 100%;
   grid-area: mapa;
   padding: 10px;
 }
@@ -580,6 +598,33 @@ main {
 }
 .etiquetaNoticias .btnEmpresa {
   border: none;
+}
+
+.seccionContactoVentas {
+  background-image: url(../../../images/fondos/fondo-parrafo.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  gap: 10px;
+}
+.seccionContactoVentas h3 {
+  font-size: 2rem;
+  text-shadow: 0 0 5px black;
+}
+.seccionContactoVentasLlamada {
+  color: red;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: 0 0 5px black;
 }
 
 .seccionPrincipal {
@@ -930,6 +975,21 @@ main {
   grid-template-columns: 1fr;
   padding: 10px;
 }
+@media screen and (min-width: 525px) {
+  .seccionProductoCatalogo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .seccionProductoCatalogo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 900px) {
+  .seccionProductoCatalogo {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .seccionProductoIntro {
   grid-area: descripcion;
   background-image: url(../../../images/fondoGrisTexturado.jpg);
@@ -959,10 +1019,10 @@ main {
   justify-items: center;
   align-items: center;
   padding: 0;
-  grid-template-rows: 200px repeat(2, auto);
+  grid-template-rows: 200px repeat(3, auto);
   grid-template-columns: 1fr;
   align-items: start;
-  grid-template-areas: "portada" "formulario" "mapa";
+  grid-template-areas: "portada" "formulario" "contacto" "mapa";
 }
 .seccionContactoPortada {
   grid-area: portada;

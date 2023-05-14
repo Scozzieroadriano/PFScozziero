@@ -1,149 +1,166 @@
-.seccionPrincipal{
+.seccionPrincipal {
     @include contenedorGrid();
     padding: 0;
-    grid-template-rows:  30px repeat(5,auto);
+    grid-template-rows: 30px repeat(5, auto);
     grid-template-columns: 1fr;
     align-items: start;
     grid-template-areas:
-    "titulo"
-    "portada"
-    "empresa"
-    "certificacion"
-    "calidad"
-    "contacto" ;
+        "titulo"
+        "portada"
+        "empresa"
+        "certificacion"
+        "calidad"
+        "contacto";
 
-    &Title{
+    &Title {
         grid-area: titulo;
         visibility: hidden;
     }
-    
-    &Portada{
+
+    &Portada {
         color: white;
         height: 300px;
         background-image: url(../../images/larrauri/JON_7322.JPG);
         background-position: center;
-        background-size: cover;   
-        @include contenedorFlex ($content:center);
+        background-size: cover;
+        @include contenedorFlex ($content: center);
         padding: 10px;
 
-        &Title{
+        &Title {
             font-size: 1.5rem;
             font-weight: bold;
             text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
-            
+
 
         }
-        span{
+
+        span {
             font-size: .8rem;
         }
-        @include tablet-resolution{
+
+        @include tablet-resolution {
             justify-content: end;
         }
-        @include desk-resolution-intermedio{
+
+        @include desk-resolution-intermedio {
             justify-content: center;
-            color: black; 
+            color: black;
             font-size: 1.5rem;
 
-            span{
+            span {
                 font-size: 1rem;
                 font-weight: bold;
             }
         }
     }
-    &Empresa{
+
+    &Empresa {
         grid-area: empresa;
         background-image: url(../../images/fondoGrisTexturado.jpg);
-        @include contenedorFlex ($content:center);
+        @include contenedorFlex ($content: center);
         padding: 10px;
 
-        p{  
+        p {
             font-family: serif;
             text-align: justify;
             line-height: 1.5;
         }
 
-        @include desk-resolution-intermedio{
+        @include desk-resolution-intermedio {
             height: 400px;
             align-items: center;
             justify-content: start;
 
-            p{
+            p {
                 font-size: 1.5rem;
                 padding: 2em;
             }
-            &Title{
+
+            &Title {
                 font-size: 2rem;
                 padding-top: 1em;
             }
         }
     }
-    &Certificaciones{
+
+    &Certificaciones {
         padding-top: 2em;
         grid-area: certificacion;
         width: 100%;
-        @include contenedorFlex ($content:center);
+        @include contenedorFlex ($content: center);
         align-items: center;
-        &Title{
+
+        &Title {
             text-align: center;
             line-height: 1.5;
         }
-        img{
+
+        img {
             width: 70%;
         }
-        @include tablet-resolution{
-            img{
+
+        @include tablet-resolution {
+            img {
                 width: 250px;
             }
         }
-        @include desk-resolution{
-            .imagenes{flex-direction: row;}
+
+        @include desk-resolution {
+            .imagenes {
+                flex-direction: row;
+            }
         }
     }
-    &Calidad{
+
+    &Calidad {
         grid-area: calidad;
-        @include contenedorFlex ($content:center);
+        @include contenedorFlex ($content: center);
         background-image: url(../../images/fondoGrisTexturado.jpg);
         padding: 10px;
         align-items: center;
         text-align: center;
-        
-        &Title{
+
+        &Title {
             font-size: 1.5rem;
             color: $secondaryColor;
             line-height: 1.5;
         }
 
-         @include tablet-resolution{
-            span{
+        @include tablet-resolution {
+            span {
                 font-size: 1.5rem;
-                
+
             }
-            @include desk-resolution{
-                span{
+
+            @include desk-resolution {
+                span {
                     font-weight: bold;
                 }
             }
         }
 
     }
-    &Contacto{
+
+    &Contacto {
         grid-area: contacto;
         height: 250px;
         background-image: url(../../images/fondos/banner-contacto.png);
         background-size: cover;
         background-position: center;
-        @include contenedorFlex($content:end);
+        @include contenedorFlex($content: end);
         padding: 10px;
         color: white;
         margin-bottom: 20px;
 
-        &Title{
-            font-size:1.5rem;
+        &Title {
+            font-size: 1.5rem;
         }
-        &Desc{
+
+        &Desc {
             font-weight: bold;
         }
-        .btnEmpresa{
+
+        .btnEmpresa {
             background-color: transparent;
             border-color: $secondaryColor;
             color: black;

@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/Logo-Finlar-Vectorizado-sin-titulo.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/css/styles.css">
     <title>La Empresa | Frigorífico Larrauri</title>
 </head>
+
 <body>
 
     <header class="header">
         <img class="headerLogoEmpresa" src="../images/logoFinlarColoresVivos.png" alt="Logo de la empresa Finlar">
 
         <ul class="headerSocialMenu">
-            <li class="headerSocialMenuItem"><a href="https://www.instagram.com/" target="_blank"><img class="socialIcon"
-                        src="../images/icons/instagram-icon.svg" alt="Icono de red social Instagram"></a></li>
+            <li class="headerSocialMenuItem"><a href="https://www.instagram.com/" target="_blank"><img
+                        class="socialIcon" src="../images/icons/instagram-icon.svg"
+                        alt="Icono de red social Instagram"></a></li>
             <li class="headerSocialMenuItem"><a href="https://www.facebook.com/" target="_blank"><img class="socialIcon"
                         src="../images/icons/facebookIcon.png" alt="Icono de red social Facebook"></a></li>
-            <li class="headerSocialMenuItem"><a href="https://www.linkedin.com/company/finlarsa" target="_blank"><img class="socialIcon"
-                        src="../images/icons/linkedin-icon.svg" alt="Icono de red social LinkedIn"></a></li>
+            <li class="headerSocialMenuItem"><a href="https://www.linkedin.com/company/finlarsa" target="_blank"><img
+                        class="socialIcon" src="../images/icons/linkedin-icon.svg"
+                        alt="Icono de red social LinkedIn"></a></li>
             <li class="headerSocialMenuItem"><a href="https://www.twitter.com/" target="_blank"><img class="socialIcon"
                         src="../images/icons/twitter-icon.svg" alt="Icono de red social Twitter"></a></li>
             <li class="headerSocialMenuItem"><a href="https://web.whatsapp.com/" target="_blank"><img class="socialIcon"
@@ -46,8 +51,8 @@
         </form>
 
         <nav class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle dropdown-no-caret btn-xs" type="button" id="dropdownMenuButton"
-                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle dropdown-no-caret btn-xs" type="button"
+                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img src="../images/icons/barWhite.png" alt="boton de menú desplegable">
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -67,13 +72,14 @@
             </article>
 
             <form class="seccionContactoForm" action="">
-                <div>
+                <div class="seccionContactoFormAsunto">
                     <label class="seccionContactoFormNombre" for="nombreUsuario"></label>
                     <input id="nombre-usuario" type="text" placeholder="Nombre y Apellido" size="30px">
                 </div>
                 <div class="seccionContactoFormAsunto">
                     <label for="emailUsuario"></label>
-                    <input id="emailUsuario" type="email" placeholder="Correo Electronico:(ejemplo@gmail.com.ar)" size="30px">
+                    <input id="emailUsuario" type="email" placeholder="Correo Electronico:(ejemplo@gmail.com.ar)"
+                        size="30px">
                 </div>
                 <div class="seccionContactoFormAsunto">
                     <label for="asuntoMensaje">Selecciona el asunto:</label>
@@ -86,27 +92,39 @@
                 </div>
                 <div class="seccionContactoFormAsunto">
                     <label for="mensajeUsuario"></label>
-                    <textarea id="mensajeUsuario" cols="30" rows="10" placeholder="Su mensaje aquí"></textarea>
+                    <textarea id="mensajeUsuario" cols="30" rows="5" placeholder="Su mensaje aquí"></textarea>
                 </div>
                 <div class="seccionContactoFormAsunto">
                     <span>Género:</span>
                     <div class="seccionContactoFormAsuntoGenero">
                         <label for="generoHombre">Hombre</label>
-                        <input id="generoHombre" type="radio" name="radioGenero" value="Hombre">
-    
+                        <input class="Genero" id="generoHombre" type="radio" name="radioGenero" value="Hombre">
+
                         <label for="generoMujer">Mujer</label>
-                        <input id="generoMujer" type="radio" name="radioGenero" value="Mujer">
-    
+                        <input class="Genero" id="generoMujer" type="radio" name="radioGenero" value="Mujer">
+
                         <label for="sinGenero">Sin Género</label>
-                        <input id="sinGenero" type="radio" name="radioGenero" value="Sin genero">
+                        <input class="Genero" id="sinGenero" type="radio" name="radioGenero" value="Sin genero">
                     </div>
                 </div>
-    
-                <div class="seccionContactoFormAsunto">
+
+                <div class="seccionContactoFormAsunto buttons">
                     <input class="btnEmpresa" type="submit" value="Enviar mensaje">
                     <input class="btnEmpresa" type="reset" value="Limpiar campos">
                 </div>
             </form>
+
+            <div class="seccionContactoVentas">
+
+                <h3>Información de contacto</h3>
+
+                <span>(+549) 03464 471109</span>
+                <span>ventas@finlar.com.ar</span>
+                <span>compras@finlar.com.ar</span>
+                <span>administracion@finlar.com.ar</span>
+                <span>sistema@finlar.com.ar</span>
+                <span class="seccionContactoVentasLlamada">ESPERAMOS SU LLAMADA </span>
+            </div>
 
             <section class="seccionContactoUbicacion">
                 <span>Avenida San Martin 825, Granadero Baigorria, Santa Fe, Argentina.</span>
@@ -120,9 +138,14 @@
     </main>
     <footer class="footer">
         <span class="footerDerecho"><strong>Finlar S.A. © Todos los derechos reservados - 2023 </strong> </span>
-        <span class="footerDefensa">Defensa de las y los Consumidores. Reclamos: <a href="https://www.argentina.gob.ar/economia/comercio/defensadelconsumidor" target="_blank">aquí</a></span>
+        <span class="footerDefensa">Defensa de las y los Consumidores. Reclamos: <a
+                href="https://www.argentina.gob.ar/economia/comercio/defensadelconsumidor"
+                target="_blank">aquí</a></span>
         <span class="footerDesarrollo">Desarrollado por Adriano Scozziero</span>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
