@@ -1,0 +1,26 @@
+.seccionContactoForm{
+    grid-area: formulario;
+    border: 1px solid $primaryColor;
+    @include contenedorFlex();
+    width: 90%;
+    padding: 10px;
+    gap: 20px;
+    align-items: center;    
+    border-radius: 10px;
+    box-shadow: 0 0 10px $secondaryColor;
+
+    &Asunto {
+        @include contenedorFlex();
+
+        &Genero{
+            @include contenedorFlex();
+            align-items: center;
+        }
+    }
+
+    input, textarea{
+        box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+        border: 1px solid $primaryColor;
+        border-radius: 5px;
+    }
+}

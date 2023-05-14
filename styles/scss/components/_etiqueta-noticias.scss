@@ -1,0 +1,25 @@
+.etiquetaNoticias{
+    @include contenedorGrid();
+
+    &Fig{
+       
+
+        Img{
+            width: 100%;
+        }
+    }
+    &Desc{
+        @include contenedorGrid();
+        padding: 0;
+        h2{
+            color: $secondaryColor;
+        }
+        p{
+            text-align: justify;
+            line-height: 1.2;
+        }
+    }
+    .btnEmpresa{
+        border: none;
+    }
+}

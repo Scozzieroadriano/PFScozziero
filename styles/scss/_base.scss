@@ -9,7 +9,11 @@ li,ul,ol,a,p,h1,h2,h3,h4,span{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     line-height: 1;
+    text-decoration: none;
 }
+a:visited {
+    color: white;
+  }
 
 
 //Declaracion de variables
@@ -46,21 +50,23 @@ $secondaryColor: rgb(194, 17, 17);
     justify-items: $items;
     flex-direction: $direction;
 }
-@mixin desk-resolution {
-    @media screen and (min-width: 768px){
-        @content;
-    }
-}
+
 @mixin tablet-resolution{
     @media screen and (min-width: 400px){
         @content;
     }
 }
+
 @mixin tablet-resolution-intermedio{
     @media screen and (min-width: 525px){
         @content;
     }
 
+}
+@mixin desk-resolution {
+    @media screen and (min-width: 768px){
+        @content;
+    }
 }
 @mixin desk-resolution-intermedio{
     @media screen and (min-width: 900px){

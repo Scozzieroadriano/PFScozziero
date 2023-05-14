@@ -1,0 +1,13 @@
+.seccionContactoUbicacion{
+    grid-area: mapa;
+    padding: 10px;
+
+    span{
+        font-size: .7rem;
+    }
+
+    &Map{
+    width: 100%;
+    height: 300px;
+    }
+}

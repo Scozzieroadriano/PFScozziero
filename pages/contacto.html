@@ -59,8 +59,70 @@
             </ul>
         </nav>
     </header>
-    <main>contacto</main>
-    <footer></footer>
+    <main>
+        <section class="seccionContacto">
+            <article class="seccionContactoPortada">
+                <h1 class="seccionContactoPortadaTitle"> CONTACTO </h1>
+                <h2 class="seccionContactoPortadaSubtitle">TRABAJÁ CON NOSOTROS</h2>
+            </article>
+
+            <form class="seccionContactoForm" action="">
+                <div>
+                    <label class="seccionContactoFormNombre" for="nombreUsuario"></label>
+                    <input id="nombre-usuario" type="text" placeholder="Nombre y Apellido" size="30px">
+                </div>
+                <div class="seccionContactoFormAsunto">
+                    <label for="emailUsuario"></label>
+                    <input id="emailUsuario" type="email" placeholder="Correo Electronico:(ejemplo@gmail.com.ar)" size="30px">
+                </div>
+                <div class="seccionContactoFormAsunto">
+                    <label for="asuntoMensaje">Selecciona el asunto:</label>
+                    <select name="" id="asuntoMensaje">
+                        <option value="mensaje">Mensaje</option>
+                        <option value="empleo">Solicitud empleo</option>
+                        <option value="reportes">Remporta un problema</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="seccionContactoFormAsunto">
+                    <label for="mensajeUsuario"></label>
+                    <textarea id="mensajeUsuario" cols="30" rows="10" placeholder="Su mensaje aquí"></textarea>
+                </div>
+                <div class="seccionContactoFormAsunto">
+                    <span>Género:</span>
+                    <div class="seccionContactoFormAsuntoGenero">
+                        <label for="generoHombre">Hombre</label>
+                        <input id="generoHombre" type="radio" name="radioGenero" value="Hombre">
+    
+                        <label for="generoMujer">Mujer</label>
+                        <input id="generoMujer" type="radio" name="radioGenero" value="Mujer">
+    
+                        <label for="sinGenero">Sin Género</label>
+                        <input id="sinGenero" type="radio" name="radioGenero" value="Sin genero">
+                    </div>
+                </div>
+    
+                <div class="seccionContactoFormAsunto">
+                    <input class="btnEmpresa" type="submit" value="Enviar mensaje">
+                    <input class="btnEmpresa" type="reset" value="Limpiar campos">
+                </div>
+            </form>
+
+            <section class="seccionContactoUbicacion">
+                <span>Avenida San Martin 825, Granadero Baigorria, Santa Fe, Argentina.</span>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4043.3579082516994!2d-60.70324235915937!3d-32.863797614550414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b653dc46782eb1%3A0x2bce639a58b3abf9!2sAv.%20San%20Mart%C3%ADn%20825%2C%20S2000%20Granadero%20Baigorria%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1683065302870!5m2!1ses-419!2sar"
+                    class="seccionContactoUbicacionMap" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <span class="footerDerecho"><strong>Finlar S.A. © Todos los derechos reservados - 2023 </strong> </span>
+        <span class="footerDefensa">Defensa de las y los Consumidores. Reclamos: <a href="https://www.argentina.gob.ar/economia/comercio/defensadelconsumidor" target="_blank">aquí</a></span>
+        <span class="footerDesarrollo">Desarrollado por Adriano Scozziero</span>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

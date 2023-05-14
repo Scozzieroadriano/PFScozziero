@@ -9,6 +9,11 @@ li, ul, ol, a, p, h1, h2, h3, h4, span {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   line-height: 1;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
 }
 
 .btnEmpresa {
@@ -115,7 +120,6 @@ li, ul, ol, a, p, h1, h2, h3, h4, span {
   display: inline-block;
 }
 .headerSocialMenuItem .socialIcon {
-  background-color: white;
   width: 25px;
 }
 @media screen and (min-width: 400px) {
@@ -307,6 +311,7 @@ main {
   margin-top: 10px;
   background-color: rgb(5, 74, 153);
   color: white;
+  height: 85px;
 }
 .footer a {
   display: inline;
@@ -315,9 +320,46 @@ main {
   background-color: rgb(5, 74, 153);
   color: white;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 100%;
+    padding: 1em;
+    gap: 10px;
+    display: grid;
+    background-color: none;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "derechos . reclamos" "derechos dev reclamos";
+  }
+  .footerDerecho {
+    grid-area: derechos;
+  }
+  .footerDefensa {
+    grid-area: reclamos;
+  }
+  .footerDesarrollo {
+    grid-area: dev;
+  }
+}
 
 .seccionNosotrosLineaTiempo {
+  background-image: url(../../../images/fondoGrisTexturado.jpg);
+  padding: 10px;
   grid-area: sucesos;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+.seccionNosotrosLineaTiempoTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .seccionNosotrosLineaTiempoContainerBtns {
   width: 100%;
@@ -330,6 +372,26 @@ main {
 }
 .seccionNosotrosLineaTiempoContainerBtns span {
   font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .seccionNosotrosLineaTiempo {
+    align-self: stretch;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+  }
+  .seccionNosotrosLineaTiempoTitle {
+    font-size: 2rem;
+  }
+  .seccionNosotrosLineaTiempoContainerBtns {
+    gap: 40px;
+  }
 }
 
 .containerDescription {
@@ -355,6 +417,15 @@ main {
   text-align: justify;
   font-family: serif;
   font-style: italic;
+  height: 250px;
+  display: inline-block;
+  line-height: 1.2;
+}
+@media screen and (min-width: 400px) {
+  .containerDescriptionDesc {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
 }
 
 .modal-body {
@@ -425,6 +496,92 @@ main {
   font-weight: bold;
 }
 
+.seccionContactoForm {
+  grid-area: formulario;
+  border: 1px solid rgb(5, 74, 153);
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  width: 90%;
+  padding: 10px;
+  gap: 20px;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(194, 17, 17);
+}
+.seccionContactoFormAsunto {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+.seccionContactoFormAsuntoGenero {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+.seccionContactoForm input, .seccionContactoForm textarea {
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgb(5, 74, 153);
+  border-radius: 5px;
+}
+
+.seccionContactoUbicacion {
+  grid-area: mapa;
+  padding: 10px;
+}
+.seccionContactoUbicacion span {
+  font-size: 0.7rem;
+}
+.seccionContactoUbicacionMap {
+  width: 100%;
+  height: 300px;
+}
+
+.etiquetaNoticias {
+  width: 100%;
+  padding: 1em;
+  gap: 10px;
+  display: grid;
+  background-color: none;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.etiquetaNoticiasFig Img {
+  width: 100%;
+}
+.etiquetaNoticiasDesc {
+  width: 100%;
+  padding: 1em;
+  gap: 10px;
+  display: grid;
+  background-color: none;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 0;
+}
+.etiquetaNoticiasDesc h2 {
+  color: rgb(194, 17, 17);
+}
+.etiquetaNoticiasDesc p {
+  text-align: justify;
+  line-height: 1.2;
+}
+.etiquetaNoticias .btnEmpresa {
+  border: none;
+}
+
 .seccionPrincipal {
   width: 100%;
   padding: 1em;
@@ -461,9 +618,26 @@ main {
 .seccionPrincipalPortadaTitle {
   font-size: 1.5rem;
   font-weight: bold;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
 }
 .seccionPrincipalPortada span {
   font-size: 0.8rem;
+}
+@media screen and (min-width: 400px) {
+  .seccionPrincipalPortada {
+    justify-content: end;
+  }
+}
+@media screen and (min-width: 900px) {
+  .seccionPrincipalPortada {
+    justify-content: center;
+    color: black;
+    font-size: 1.5rem;
+  }
+  .seccionPrincipalPortada span {
+    font-size: 1rem;
+    font-weight: bold;
+  }
 }
 .seccionPrincipalEmpresa {
   grid-area: empresa;
@@ -480,6 +654,21 @@ main {
   font-family: serif;
   text-align: justify;
   line-height: 1.5;
+}
+@media screen and (min-width: 900px) {
+  .seccionPrincipalEmpresa {
+    height: 400px;
+    align-items: center;
+    justify-content: start;
+  }
+  .seccionPrincipalEmpresa p {
+    font-size: 1.5rem;
+    padding: 2em;
+  }
+  .seccionPrincipalEmpresaTitle {
+    font-size: 2rem;
+    padding-top: 1em;
+  }
 }
 .seccionPrincipalCertificaciones {
   padding-top: 2em;
@@ -500,6 +689,16 @@ main {
 .seccionPrincipalCertificaciones img {
   width: 70%;
 }
+@media screen and (min-width: 400px) {
+  .seccionPrincipalCertificaciones img {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .seccionPrincipalCertificaciones .imagenes {
+    flex-direction: row;
+  }
+}
 .seccionPrincipalCalidad {
   grid-area: calidad;
   width: 100%;
@@ -517,6 +716,16 @@ main {
   font-size: 1.5rem;
   color: rgb(194, 17, 17);
   line-height: 1.5;
+}
+@media screen and (min-width: 400px) {
+  .seccionPrincipalCalidad span {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 400px) and (min-width: 768px) {
+  .seccionPrincipalCalidad span {
+    font-weight: bold;
+  }
 }
 .seccionPrincipalContacto {
   grid-area: contacto;
@@ -546,6 +755,7 @@ main {
   color: black;
   font-weight: bold;
   margin-top: 20px;
+  box-shadow: inset 0 0 20px rgb(0, 0, 0);
 }
 
 .seccionNosotros {
@@ -609,6 +819,7 @@ main {
   line-height: 1.3;
 }
 .seccionNosotrosCicloDos {
+  grid-area: desposte;
   background-color: red;
   background-color: red;
   color: white;
@@ -619,6 +830,7 @@ main {
   justify-items: center;
   flex-direction: column;
   padding: 10px;
+  width: 100%;
 }
 .seccionNosotrosCicloDosTitle {
   text-align: center;
@@ -631,6 +843,42 @@ main {
   font-family: serif;
   line-height: 1.3;
   font-size: 1.2rem;
+}
+@media screen and (min-width: 400px) {
+  .seccionNosotros {
+    padding-top: 25px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .seccionNosotros {
+    padding-top: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 30px 1fr 400px 300px;
+    grid-template-areas: "titulo titulo" "historia sucesos" "vision vision" "desposte desposte";
+  }
+  .seccionNosotrosHistoria {
+    align-self: stretch;
+    justify-content: start;
+    gap: 50px;
+  }
+  .seccionNosotrosHistoriaTitle {
+    font-size: 2rem;
+  }
+  .seccionNosotrosHistoria p {
+    font-size: 1.2rem;
+  }
+  .seccionNosotrosVision {
+    align-self: stretch;
+    align-items: start;
+    justify-content: start;
+  }
+  .seccionNosotrosVision p {
+    font-size: 1.3rem;
+  }
+  .seccionNosotrosCicloDos {
+    align-self: stretch;
+    gap: 30px;
+  }
 }
 
 .seccionProducto {
@@ -699,6 +947,60 @@ main {
 }
 .seccionProductoIntroDesc {
   line-height: 1.5;
+}
+
+.seccionContacto {
+  width: 100%;
+  padding: 1em;
+  gap: 10px;
+  display: grid;
+  background-color: none;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 0;
+  grid-template-rows: 200px repeat(2, auto);
+  grid-template-columns: 1fr;
+  align-items: start;
+  grid-template-areas: "portada" "formulario" "mapa";
+}
+.seccionContactoPortada {
+  grid-area: portada;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  background-image: url(../../../images/fondos/fondo-contacto.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  align-items: center;
+  gap: 25px;
+}
+.seccionContactoPortadaTitle, .seccionContactoPortadaSubtitle {
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.seccionNovedades {
+  width: 100%;
+  padding: 1em;
+  gap: 10px;
+  display: grid;
+  background-color: none;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 30px repeat(4, auto);
+  grid-template-columns: 1fr;
+  padding: 0;
+  grid-template-areas: "titulo" "historia" "sucesos" "vision" "desposte";
+}
+.seccionNovedadesTitle {
+  grid-area: titulo;
 }
 
 /*# sourceMappingURL=styles.css.map */

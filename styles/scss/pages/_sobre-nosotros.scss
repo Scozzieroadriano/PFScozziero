@@ -44,11 +44,12 @@
             }
         }  
     &CicloDos{
+        grid-area: desposte;
         background-color: red;        
         @include contraste(red);
         @include contenedorFlex ();
         padding: 10px;
-
+        width: 100%;
         &Title{
             text-align: center;
             font-weight: bold;    
@@ -60,6 +61,46 @@
          font-size: 1.2rem;
         }
         
+    }
+    @include tablet-resolution{
+       padding-top: 25px;      
+
+    }
+    @include desk-resolution{
+        padding-top: 30px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 30px 1fr 400px 300px;
+        grid-template-areas: 
+        "titulo titulo"
+        "historia sucesos"
+        "vision vision"
+        "desposte desposte";    
+        
+       &Historia{
+        align-self: stretch;
+        justify-content: start;
+        gap: 50px;
+        &Title{
+            font-size: 2rem;
+            
+        }
+        p{
+            font-size: 1.2rem;
+        }
+       }
+       &Vision{
+        align-self: stretch;
+        align-items: start;
+        justify-content: start;
+
+        p{
+            font-size: 1.3rem;
+        }
+       }
+       &CicloDos{
+        align-self: stretch;
+        gap: 30px;
+       }
     }
 
 }

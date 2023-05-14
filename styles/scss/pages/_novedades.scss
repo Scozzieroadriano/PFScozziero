@@ -1,0 +1,15 @@
+.seccionNovedades{
+    @include contenedorGrid();
+    grid-template-rows: 30px repeat(4,auto);
+    grid-template-columns: 1fr;
+    padding: 0;
+    grid-template-areas: 
+    "titulo"
+    "historia"
+    "sucesos"
+    "vision"
+    "desposte";
+    &Title{
+        grid-area: titulo;
+    }
+}

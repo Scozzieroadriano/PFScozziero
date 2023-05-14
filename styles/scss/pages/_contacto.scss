@@ -1,0 +1,30 @@
+.seccionContacto{
+    @include contenedorGrid();
+    padding: 0;
+    grid-template-rows: 200px repeat(2,auto) ;
+    grid-template-columns: 1fr;
+    align-items: start;
+    grid-template-areas:    
+    "portada"
+    "formulario"
+    "mapa"
+     ;
+
+    &Portada{
+        grid-area: portada;
+        @include contenedorFlex();
+        background-image: url(../../../images/fondos/fondo-contacto.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        align-items: center;
+        gap: 25px;
+        
+        &Title, &Subtitle{
+            font-weight: bold;
+            color:white;
+            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+        }
+        
+    }
+}
