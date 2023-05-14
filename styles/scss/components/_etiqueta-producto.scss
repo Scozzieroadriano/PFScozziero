@@ -1,34 +1,32 @@
 .etiquetaProducto{
     border: 1px solid red;
     @include contenedorFlex();
-    width: 148px;
-    height: 148px;
+    width: 250px;
+    height: 250px;
     position: relative;
     display: inline-block;
     overflow: hidden;
+    border-radius: 10px;
+    
 
     &Img{
         width: 100%;
         display: block;
         position: relative;
+        transform: translateY(-15%);
         height: 100%;
         transition: transform 0.3s ease-out;
-        transition: transform 0.2seg ease-in-out;
 
-        &Img:hover{
-            transform: escale(1.2);
-        }
+        
     }
     &:hover &Img{
-        transform: translateY(-20%); 
-           
+        transform: translateY(-20%);            
         
     }
 
     &:hover .btnProducto{
         transform: translateY(1%);
-        transform: escale(1.4);  
-        
+                
     }
 
 }

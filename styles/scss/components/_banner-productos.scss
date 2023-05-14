@@ -1,0 +1,12 @@
+.seccionProductoBanner{
+    background-image: url(../../../images/fondos/fondo-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    color: white;
+    @include contenedorFlex();
+    align-items: center;
+    gap:20px;
+    font-weight: bold;
+}

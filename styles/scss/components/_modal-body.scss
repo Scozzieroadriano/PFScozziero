@@ -1,0 +1,16 @@
+.modal-body{
+    @include contenedorFlex;
+    border: solid 1px $secondaryColor;
+    align-items: center;
+
+    span{
+        font-weight: bold;
+    }
+
+    &Desc{
+        text-align: justify;
+        box-shadow: 0 0 10px red;
+        line-height: 1.5;
+        padding: 10px;
+    }
+}
