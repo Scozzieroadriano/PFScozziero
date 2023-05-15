@@ -27,7 +27,7 @@
         border: none;
     }
 
-    @include tablet-resolution{
+    @include tabletResolution{
         max-width: 360px;
     }
 }

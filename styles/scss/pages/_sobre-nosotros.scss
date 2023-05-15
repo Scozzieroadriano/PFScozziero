@@ -44,6 +44,7 @@
 
         p {
             @include parrafo();
+            
         }
     }
 
@@ -69,12 +70,12 @@
 
     }
 
-    @include tablet-resolution {
+    @include tabletResolution {
         padding-top: 25px;
 
     }
 
-    @include desk-resolution {
+    @include deskResolution {
         padding-top: 30px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 30px 1fr 400px 300px;
@@ -101,17 +102,23 @@
 
         &Vision {
             align-self: stretch;
-            align-items: start;
-            justify-content: start;
+            align-items: center;
+            justify-content: center;
 
             p {
                 font-size: 1.3rem;
+                padding: 0 3em 0 3em;
             }
         }
 
         &CicloDos {
             align-self: stretch;
             gap: 30px;
+
+            p{
+                font-size: 1.3rem;
+                padding: 0 3em 0 3em;
+            }
         }
     }
 

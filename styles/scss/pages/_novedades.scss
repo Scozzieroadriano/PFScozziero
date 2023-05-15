@@ -24,16 +24,16 @@
             grid-template-columns: repeat(2,1fr);
         }
 
-        @include desk-resolution-intermedio{
+        @include deskResolutionIntermedio{
             grid-template-columns: repeat(3,1fr);
         }
         
     }
 
-    @include tablet-resolution{
+    @include tabletResolution{
         padding-top: 25px;
     }
-    @include desk-resolution{
+    @include deskResolution{
         padding-top: 30px;
     }
 }

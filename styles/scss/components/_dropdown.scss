@@ -28,7 +28,7 @@
             line-height: 2;
         }
     }
-    @include desk-resolution(){
+    @include deskResolution(){
      visibility: hidden;   
     }
 }

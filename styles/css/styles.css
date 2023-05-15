@@ -329,7 +329,7 @@ main {
   margin-top: 10px;
   background-color: rgb(5, 74, 153);
   color: white;
-  height: 85px;
+  height: 100px;
 }
 .footer a {
   display: inline;
@@ -348,9 +348,9 @@ main {
     justify-content: center;
     justify-items: center;
     align-items: center;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "derechos . reclamos" "derechos dev reclamos";
+    grid-template-areas: "derechos . reclamos" "derechos . reclamos" "dev dev dev";
   }
   .footerDerecho {
     grid-area: derechos;
@@ -942,15 +942,20 @@ main {
   }
   .seccionNosotrosVision {
     align-self: stretch;
-    align-items: start;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
   }
   .seccionNosotrosVision p {
     font-size: 1.3rem;
+    padding: 0 3em 0 3em;
   }
   .seccionNosotrosCicloDos {
     align-self: stretch;
     gap: 30px;
+  }
+  .seccionNosotrosCicloDos p {
+    font-size: 1.3rem;
+    padding: 0 3em 0 3em;
   }
 }
 

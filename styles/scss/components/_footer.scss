@@ -9,7 +9,7 @@
     bottom: 0;
     margin-top: 10px;
     @include contraste($primaryColor);
-    height: 85px;
+    height: 100px;
 
 
     a{display: inline;
@@ -18,13 +18,14 @@
         @include contraste($primaryColor);
 
     }
-    @include desk-resolution{
+    @include deskResolution{
         @include contenedorGrid();
-        grid-template-rows: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
         grid-template-columns: repeat(3,1fr);
         grid-template-areas: 
         "derechos . reclamos"        
-        "derechos dev reclamos";
+        "derechos . reclamos"
+        "dev dev dev";
 
         &Derecho{
             grid-area: derechos;

@@ -20,7 +20,7 @@
 
     }
 
-    @include desk-resolution {
+    @include deskResolution {
         align-self: stretch;
         @include contenedorFlex();
         align-items: center;
@@ -64,7 +64,7 @@
         display: inline-block;
         line-height: 1.2;
 
-        @include tablet-resolution {
+        @include tabletResolution {
             font-size: 1.2rem;
             line-height: 1.3;
         }

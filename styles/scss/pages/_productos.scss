@@ -35,15 +35,15 @@
         grid-template-columns: 1fr;
         padding: 10px;
 
-        @include tablet-resolution-intermedio {
+        @include tabletResolutionIntermedio {
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @include desk-resolution {
+        @include deskResolution {
             grid-template-columns: repeat(3, 1fr);
         }
 
-        @include desk-resolution-intermedio {
+        @include deskResolutionIntermedio {
             grid-template-columns: repeat(4, 1fr);
         }
     }

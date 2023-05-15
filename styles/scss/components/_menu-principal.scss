@@ -19,14 +19,14 @@
             }
         }
     &{
-        @include desk-resolution{
+        @include deskResolution{
             gap: 15px;
         }
     }
 
     }
 
-    @include desk-resolution() {
+    @include deskResolution() {
         visibility: visible;
         
         &List {
@@ -49,7 +49,7 @@
         }
     }
 
-    @include desk-resolution-intermedio() {
+    @include deskResolutionIntermedio() {
         max-width: 600px;
 
         &List {
@@ -58,7 +58,7 @@
         }
     }
 
-    @include desk-resolution-max {
+    @include deskResolutionMax {
         &List {
             justify-content: space-around;
 

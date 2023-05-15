@@ -14,7 +14,7 @@
             }
         }
     }
-@include tablet-resolution{
+@include tabletResolution{
     width: max(250px);
 
     &Item{

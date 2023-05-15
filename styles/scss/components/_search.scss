@@ -11,18 +11,18 @@ visibility: hidden;
     color: white;
     font-weight: bold;
 }
-@include tablet-resolution{
+@include tabletResolution{
     visibility: visible;
     max-width: 200px;
 }
-@include tablet-resolution-intermedio{
+@include tabletResolutionIntermedio{
     justify-self: end;
 }
-@include desk-resolution{
+@include deskResolution{
     grid-area: search;
     max-width: 180px;
 }
-@include desk-resolution-intermedio{
+@include deskResolutionIntermedio{
     max-width: 300px;
 }
 }

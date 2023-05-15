@@ -51,13 +51,13 @@ $secondaryColor: rgb(194, 17, 17);
     flex-direction: $direction;
 }
 
-@mixin tablet-resolution{
+@mixin tabletResolution{
     @media screen and (min-width: 400px){
         @content;
     }
 }
 
-@mixin tablet-resolution-intermedio{
+@mixin tabletResolutionIntermedio{
     @media screen and (min-width: 525px){
         @content;
     }
@@ -68,17 +68,17 @@ $secondaryColor: rgb(194, 17, 17);
         @content;
     }
 }
-@mixin desk-resolution {
+@mixin deskResolution {
     @media screen and (min-width: 768px){
         @content;
     }
 }
-@mixin desk-resolution-intermedio{
+@mixin deskResolutionIntermedio{
     @media screen and (min-width: 900px){
         @content;
     }
 }
-@mixin desk-resolution-max{
+@mixin deskResolutionMax{
     @media screen and (min-width: 1024px){
         @content;
     }
