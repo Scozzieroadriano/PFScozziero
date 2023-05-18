@@ -29,6 +29,7 @@ a:visited {
 }
 .btnEmpresa:hover {
   transform: scale(1.2);
+  color: white;
 }
 
 .etiquetaBtn {
