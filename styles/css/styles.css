@@ -29,7 +29,6 @@ a:visited {
 }
 .btnEmpresa:hover {
   transform: scale(1.2);
-  background-color: rgb(5, 74, 153);
 }
 
 .etiquetaBtn {
@@ -706,6 +705,7 @@ main {
     justify-content: center;
     color: black;
     font-size: 1.5rem;
+    height: 60vh;
   }
   .seccionPrincipalPortada span {
     font-size: 1rem;
